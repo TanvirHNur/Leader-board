@@ -134,6 +134,7 @@ hr{
 nav{
     display: flex;
     justify-content: space-between;
+    /* position: fixed; */
     padding-left: 400px;
     padding-right: 300px;
     background: #562EFF;
