@@ -20,6 +20,35 @@ main{
     margin-top: 21px;
     border-radius: 20px;
 }
+.button-2{
+    color: black;
+    cursor: pointer;
+    /* font-size: 13px;
+    width: 120px;
+    height: 40px;
+    padding: 12px 34px; */
+    background: transparent;
+}
+.button-2:hover{
+    background-color: tomato;
+    border: 1px solid tomato;
+    transition: 1s;
+    padding: 3px 6px;
+}
+.button-1{
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+    width: 120px;
+    height: 40px;
+    padding: 12px 34px;
+    background: transparent;
+}
+.button-1:hover{
+    background-color: tomato;
+    border: 1px solid tomato;
+    transition: 1s;
+}
 /* top players style */
 
 .top-players{
@@ -144,6 +173,7 @@ nav{
 }
 .logo{
     display: flex;
+    align-items: center;
     color: #FFFFFF
 }
 .logo img{
@@ -164,6 +194,44 @@ nav{
 
 }
 
+/* buy .courses */
+.contact-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.enter-text input:hover{
+    height: 40px;
+    color:tomato;
+    font-size: 16px;
+}
+.enter-text input{
+    width: 440px;
+    height: 30px;
+    border: 2px solid #ED6B4F;
+}
+.skill-check{
+    display: flex;
+    justify-content: space-around;
+}
+.skill-buy{
+    width: 550px;
+}
+/* .button-1{
+    width: 100px;
+    height: 40px;
+    border: 1px solid orangered;
+}
+.button-1:hover{
+    background-color: tomato;
+} */
+fieldset{
+    border: 2px solid #ED6B4F;
+}
+textarea{
+    border: 2px solid #ED6B4F;
+    margin-top: 10px;
+}
 /* Media queries */
 
 /* Mobile devices */
@@ -175,10 +243,14 @@ nav{
     }
     .players, .blogs, .courses{
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 200px;
+        grid-row-gap: 20px;
     }
     .player, .blog, nav, .menu{
         flex-direction: column;
+    }
+    .player img{
+        width: 156px;
+        height: 156px;
     }
     nav{
         width: 90%;
